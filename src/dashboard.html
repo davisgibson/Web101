@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="dashboard-style.css" />
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <h1>Hello!</h1>
+    <div id="widgets">
+        <div id="calculator">
+            <form id="calcDisp">
+            <div id="calcItems">
+                <div id="row1" class="row">
+                    <input type="button" value="1" onClick="calcDisp.display.value += '1'"></button>
+                    <input type="button" value="2"></button>
+                    <input type="button" value="3"></button>
+                    <input type="button" value="+"></button>
+                </div>
+                <div id="row2" class="row">
+                    <input type="button" value="4"></button>
+                    <input type="button" value="5"></button>
+                    <input type="button" value="6"></button>
+                    <input type="button" value="-"></button>
+                </div>
+                <div id="row3" class="row">
+                    <input type="button" value="7"></button>
+                    <input type="button" value="8"></button>
+                    <input type="button" value="9"></button>
+                    <input type="button" value="*"></button>
+                </div>
+                <div id="row4" class="row">
+                    <input type="button" value="CL"></button>
+                    <input type="button" value="0"></button>
+                    <input type="button" value="=" onClick="calcDisp.display.value = eval(calcDisp.display.value)"></button>
+                    <input type="button" value="/"></button>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="date">
+            <p>10:00PM</p>
+            <h3><i>Friday, October 13th</i></h3>
+        </div>
+
+        <div id="toDo">
+            <h2>To Do:</h2>
+            <ul>
+                <li>Write a To Do list</li>
+                <li>Walk Dogs</li>
+                <li>Finish Walking Dogs</li>
+            </ul>
+            <p>Next:</p><input type="text"><input type="submit">
+        </div>
+        <div id="greeting">
+            <h2>Hello.</h2>
+            <p><i>You're lookin' fine today.</i></p>
+        </div>
+    </div>
+</body>
+</html>

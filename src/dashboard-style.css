@@ -1,0 +1,75 @@
+#greeting{
+    background: lightpink;
+    text-align:center;
+}
+h1{
+    text-align: center;
+    background: lightgrey;
+}
+#date{
+    background: lightblue;
+    text-align: center;
+}
+#date > p{
+    font-size: 50px;
+}
+#toDo{
+    background:lightgreen;
+    padding-left: 20px;
+}
+#calcDisp{
+    margin-top:0px;
+    width: 300px;
+    background: grey;
+    height: 50px;
+    padding-top:10px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+#calcItems > *{
+    text-align:center;
+    height: 25%;
+}
+#calcItems{
+    background: lightgrey;
+    width: 300px;
+    height: 200px;
+}
+
+#calcItems > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.row > input{
+    width: 25%;
+}
+
+@media (min-width:1201px) and (max-width:2000px){
+    #widgets{
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px;
+    }
+}
+
+@media (min-width:901px) and (max-width:1200px){
+    #widgets{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+    }
+}
+
+@media (min-width:600px) and (max-width:900px){
+    #widgets{
+        display: grid;
+        grid-template-columns: 300px 300px;
+    }
+}
+
+
+
+@media (max-width:599px){
+    #calculator{
+        width: 100vw;
+    }
+}
